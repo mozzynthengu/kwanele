@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apex Beverages | Pure Refreshment</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',Arial,sans-serif;
+}
+
+
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+
+
+nav{
+
+position:fixed;
+top:0;
+width:100%;
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+z-index:100;
+
+}
+
+
+.logo{
+
+font-size:26px;
+font-weight:bold;
+color:#c08a45;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:20px;
+
+}
+
+
+
+.hero{
+
+min-height:100vh;
+padding:120px 10% 50px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+background:
+linear-gradient(135deg,#ffffff,#eaf6ff);
+
+}
+
+
+
+.hero-text{
+
+width:50%;
+
+}
+
+
+
+.tag{
+
+color:#c08a45;
+font-weight:bold;
+letter-spacing:2px;
+
+}
+
+
+
+.hero h1{
+
+font-size:60px;
+margin:20px 0;
+
+}
+
+
+
+.hero span{
+
+color:#c08a45;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+line-height:1.6;
+}
+
+
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+
+
+.btn{
+
+background:#c08a45;
+color:white;
+padding:15px 30px;
+border-radius:40px;
+border:none;
+text-decoration:none;
+cursor:pointer;
+display:inline-block;
+margin:5px;
+
+}
+
+
+
+.hero img{
+
+width:420px;
+animation:float 3s infinite;
+
+filter:drop-shadow(0 20px 25px #999);
+
+}
+
+
+
+@keyframes float{
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+
+
+
+section{
+
+padding:80px 10%;
+
+}
+
+
+
+.title{
+
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+
+}
+
+
+
+.cards{
+
+display:flex;
+gap:30px;
+justify-content:center;
+
+}
+
+
+
+.card{
+
+background:white;
+padding:35px;
+width:300px;
+border-radius:25px;
+box-shadow:0 15px 35px #ddd;
+text-align:center;
+
+}
+
+
+
+
+.calculator,
+.form{
+
+max-width:700px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 15px 35px #ddd;
+
+}
+
+
+
+input,select,textarea{
+
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:12px;
+border:1px solid #ddd;
+
+}
+
+
+
+.result{
+
+display:none;
+background:#ecfdf5;
+padding:20px;
+margin-top:20px;
+border-radius:15px;
+
+}
+
+
+
+.faq{
+
+max-width:700px;
+margin:auto;
+
+}
+
+
+
+details{
+
+background:white;
+padding:20px;
+margin:10px;
+border-radius:15px;
+
+}
+
+
+
+footer{
+
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+
+}
+
+
+
+.whatsapp{
+
+position:fixed;
+right:25px;
+bottom:25px;
+
+background:#25D366;
+color:white;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:25px;
+text-decoration:none;
+
+}
+
+
+
+@media(max-width:800px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+
+.hero-text{
+
+width:100%;
+
+}
+
+
+.hero img{
+
+width:90%;
+margin-top:40px;
+
+}
+
+
+.cards{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<nav>
+
+<div class="logo">
+APEX BEVERAGES
+</div>
+
+
+<div>
+
+<a href="#products">Products</a>
+<a href="#calculator">Calculator</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+
+
+<div class="hero">
+
+
+<div class="hero-text">
+
+
+<div class="tag">
+PREMIUM HYDRATION • SINCE DAY ONE
+</div>
+
+
+<h1>
+
+Pure Refreshment
+<span>
+For Every Occasion
+</span>
+
+</h1>
+
+
+<p>
+
+Premium purified water and refreshing juice
+for schools, events, businesses and communities.
+
+</p>
+
+
+
+<div class="buttons">
+
+<a class="btn" href="#calculator">
+Calculate Drinks
+</a>
+
+
+<a class="btn" href="#contact">
+Talk To Us
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<img src="apex-bottles.png">
+
+
+</div>
+
+
+
+
+
+
+
+<section id="products">
+
+
+<h2 class="title">
+Our Products
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h1>💧</h1>
+
+<h2>Purified Water</h2>
+
+<p>
+Clean drinking water
+for everyday hydration.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h1>🍊</h1>
+
+<h2>Fresh Juice</h2>
+
+<p>
+Refreshing juice for
+events and celebrations.
+</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<section id="calculator">
+
+
+<h2 class="title">
+Event Drinks Calculator
+</h2>
+
+
+<div class="calculator">
+
+
+<select id="event">
+
+<option>School Event</option>
+<option>Sports Day</option>
+<option>Funeral</option>
+<option>Church</option>
+<option>Party</option>
+
+</select>
+
+
+
+<input 
+id="guests"
+type="number"
+placeholder="Number of guests">
+
+
+
+<select id="duration">
+
+<option value="1">
+1-2 Hours
+</option>
+
+
+<option value="1.5">
+3-5 Hours
+</option>
+
+
+<option value="2">
+Full Day
+</option>
+
+
+</select>
+
+
+
+<button class="btn" onclick="calculate()">
+
+Calculate
+
+</button>
+
+
+
+
+<div class="result" id="result">
+
+<p id="water"></p>
+
+<p id="juice"></p>
+
+
+<br>
+
+<a id="quote" class="btn" target="_blank">
+WhatsApp Quote
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Questions Answered
+</h2>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+Do you supply bulk orders?
+</summary>
+
+<p>
+Yes, Apex Beverages supplies events and organisations.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Do you deliver?
+</summary>
+
+<p>
+Contact us for delivery availability.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+How do I order?
+</summary>
+
+<p>
+Send your event details through WhatsApp.
+</p>
+
+</details>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Tell Us About Your Event
+</h2>
+
+
+<div class="form">
+
+
+<input id="name" placeholder="Full Name">
+
+
+<input id="phone" placeholder="Phone Number">
+
+
+<textarea id="details"
+placeholder="Event type, date, location, guests...">
+</textarea>
+
+
+
+<button class="btn" onclick="sendForm()">
+
+Send via WhatsApp
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<h2>
+Apex Beverages
+</h2>
+
+<p>
+Fuel Your Day, One Sip at a Time.
+</p>
+
+
+<p>
+WhatsApp: 0742 737 463
+</p>
+
+
+</footer>
+
+
+
+
+
+<a class="whatsapp"
+href="https://wa.me/27742737463">
+💬
+</a>
+
+
+
+
+
+
+<script>
+
+
+function calculate(){
+
+
+let guests =
+document.getElementById("guests").value;
+
+
+let duration =
+document.getElementById("duration").value;
+
+
+
+if(!guests){
+
+alert("Enter guests");
+
+return;
+
+}
+
+
+let water =
+Math.ceil(guests*duration);
+
+
+let juice =
+Math.ceil(guests*.5*duration);
+
+
+
+document.getElementById("water").innerHTML=
+"💧 Water: "+water+" bottles";
+
+
+document.getElementById("juice").innerHTML=
+"🍊 Juice: "+juice+" bottles";
+
+
+
+let msg=
+`Hello Apex Beverages
+
+I need a quote.
+
+Guests:
+${guests}
+
+Water:
+${water}
+
+Juice:
+${juice}`;
+
+
+
+document.getElementById("quote").href=
+"https://wa.me/27742737463?text="
++encodeURIComponent(msg);
+
+
+
+document.getElementById("result").style.display="block";
+
+
+}
+
+
+
+
+function sendForm(){
+
+
+let name=
+document.getElementById("name").value;
+
+
+let phone=
+document.getElementById("phone").value;
+
+
+let details=
+document.getElementById("details").value;
+
+
+
+let msg=
+
+`Hello Apex Beverages
+
+Name:
+${name}
+
+Phone:
+${phone}
+
+Event Details:
+${details}`;
+
+
+
+window.open(
+"https://wa.me/27742737463?text="
++
+encodeURIComponent(msg)
+);
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>
